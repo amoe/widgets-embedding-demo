@@ -1,8 +1,10 @@
 import WidgetView from 'amoe-butterworth-widgets';
-import foo from 'amoe-butterworth-widgets';
+import mountWidgets from 'amoe-butterworth-widgets';
+
+import style from '../node_modules/amoe-butterworth-widgets/dist/amoe-butterworth-widgets.css';
 
 function onReady() {
-    console.log("exported value was %o", foo);
+    mountWidgets('#app');
 }
 
 document.addEventListener('DOMContentLoaded', onReady);
