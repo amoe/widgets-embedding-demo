@@ -1,11 +1,7 @@
- import _ from 'lodash';
+import WidgetView from 'amoe-butterworth-widgets';
 
-  function component() {
-    let element = document.createElement('div');
+function onReady() {
+    console.log("widget view is %o", WidgetView);
+}
 
-    element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-    return element;
-  }
-
-  document.body.appendChild(component());
+document.addEventListener('DOMContentLoaded', onReady);
